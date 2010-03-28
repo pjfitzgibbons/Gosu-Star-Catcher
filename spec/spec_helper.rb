@@ -3,3 +3,5 @@
 require 'spec/autorun'
 
 $: << './lib'
+
+require 'ruby-debug'; Debugger.start

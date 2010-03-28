@@ -8,7 +8,8 @@ describe GosuStarCatcher do
       @g = GosuStarCatcher.new
     end
     it "should have set dimensions" do
-      puts @g.methods.sort
+      # debugger
+      @g.width.should == 640
       @g.height.should == 480
       @g.caption.should == "Gosu Star Catcher"
     end
