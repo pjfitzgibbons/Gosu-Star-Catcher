@@ -13,5 +13,15 @@ describe GosuStarCatcher do
       @g.height.should == 480
       @g.caption.should == "Gosu Star Catcher"
     end
+    it "should have a background image" do
+      @g.instance_variable_defined?(:@background_image).should be_true
+      b = @g.instance_variable_get(:@background_image)
+      b.should be_a_kind_of Gosu::Image
+    end
+  end
+  describe "when drawn" do
+    it "should have" do
+      
+    end
   end
 end
